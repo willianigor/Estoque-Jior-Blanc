@@ -1171,9 +1171,9 @@ elif page == "Estoque Atual":
     else:
         def highlight(row):
             if row["estoque"] < 0:
-                return ["background-color: #ffcccc" for _ in row]
+                return ["background-color: #990303" for _ in row]
             if row["estoque"] <= critico:
-                return ["background-color: #fff2cc" for _ in row]
+                return ["background-color: #990303" for _ in row]
             return ["" for _ in row]
         
         display_df = df.copy()
